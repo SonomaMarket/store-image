@@ -14,7 +14,7 @@ const CSS_HANDLES = ['imageElement', 'imageElementLink'] as const
 
 export interface ImageProps
   extends ImageSchema,
-    ImgHTMLAttributes<HTMLImageElement> {
+  ImgHTMLAttributes<HTMLImageElement> {
   maxWidth?: string | number
   maxHeight?: string | number
   minWidth?: string | number
@@ -130,8 +130,8 @@ function Image(props: ImageProps) {
       className={handles.imageElement}
       {...(preload
         ? {
-            'data-vtex-preload': 'true',
-          }
+          'data-vtex-preload': 'true',
+        }
         : {})}
     />
   )
@@ -147,11 +147,11 @@ function Image(props: ImageProps) {
   const promotionEventData =
     analyticsProperties === 'provide'
       ? {
-          id: promotionId,
-          name: promotionName,
-          creative: formattedSrc,
-          position: promotionPosition,
-        }
+        id: promotionId,
+        name: promotionName,
+        creative: formattedSrc,
+        position: promotionPosition,
+      }
       : undefined
 
   const formattedLink = formatIOMessage({ id: link?.url, intl })

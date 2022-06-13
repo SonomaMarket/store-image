@@ -26,10 +26,31 @@
           "$ref": "app:vtex.native-types#/definitions/text",
           "default": ""
         },
+        "initialDisplayDate": {
+          "title": "Data inil",
+          "description": "none",
+          "type": "string",
+          "widget": {
+            "ui:widget": "date-time"
+          },
+          "default": "12/12/2020"
+        },
+        "endDisplayDate": {
+          "title": "Data final",
+          "description": "none",
+          "type": "string",
+          "widget": {
+            "ui:widget": "date-time"
+          },
+          "default": "12/12/2100"
+        },
         "analyticsProperties": {
           "title": "admin/editor.image.analytics.title",
           "description": "admin/editor.image.analytics.description",
-          "enum": ["none", "provide"],
+          "enum": [
+            "none",
+            "provide"
+          ],
           "enumNames": [
             "admin/editor.image.analytics.none",
             "admin/editor.image.analytics.provide"
@@ -46,7 +67,9 @@
             {
               "properties": {
                 "analyticsProperties": {
-                  "enum": ["provide"]
+                  "enum": [
+                    "provide"
+                  ]
                 },
                 "promotionId": {
                   "title": "admin/editor.image.analytics.promotionId",
@@ -68,7 +91,9 @@
             {
               "properties": {
                 "analyticsProperties": {
-                  "enum": ["none"]
+                  "enum": [
+                    "none"
+                  ]
                 }
               }
             }
@@ -118,10 +143,31 @@
             "$ref": "app:vtex.native-types#/definitions/text",
             "default": "100%"
           },
+          "initialDisplayDate": {
+            "title": "Data inicial",
+            "description": "",
+            "type": "string",
+            "widget": {
+              "ui:widget": "date-time"
+            },
+            "default": "12/12/2020"
+          },
+          "endDisplayDate": {
+            "title": "Data final",
+            "description": "",
+            "type": "string",
+            "widget": {
+              "ui:widget": "date-time"
+            },
+            "default": "12/12/2100"
+          },
           "analyticsProperties": {
             "title": "admin/editor.image.analytics.title",
             "description": "admin/editor.image.analytics.description",
-            "enum": ["none", "provide"],
+            "enum": [
+              "none",
+              "provide"
+            ],
             "enumNames": [
               "admin/editor.image.analytics.none",
               "admin/editor.image.analytics.provide"
@@ -138,7 +184,9 @@
               {
                 "properties": {
                   "analyticsProperties": {
-                    "enum": ["provide"]
+                    "enum": [
+                      "provide"
+                    ]
                   },
                   "promotionId": {
                     "title": "admin/editor.image.analytics.promotionId",
@@ -160,7 +208,9 @@
               {
                 "properties": {
                   "analyticsProperties": {
-                    "enum": ["none"]
+                    "enum": [
+                      "none"
+                    ]
                   }
                 }
               }

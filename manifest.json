@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
+  "vendor": "sonoma",
   "name": "store-image",
-  "version": "0.14.2",
+  "version": "0.0.1",
   "title": "VTEX Image",
   "description": "Set of VTEX components to handle images",
   "builders": {
